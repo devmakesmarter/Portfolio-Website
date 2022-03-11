@@ -172,11 +172,11 @@ body {
     max-width: 100%;
     min-height: 1.5rem;
     background-color: darkgreen;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: clamp(1rem, 0.1rem + 4.5vw, 3rem);
     flex-direction: column;
+    margin-top: clamp(1rem, 0.1rem + 4.5vw, 3rem);
     gap: 1rem;
 }
 

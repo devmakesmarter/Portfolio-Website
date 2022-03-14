@@ -1,0 +1,394 @@
+        * {
+            box-sizing: border-box !important;
+        }
+        
+        * h1 {
+            font-size: clamp(1.8rem, 0.4rem + 4.5vw, 3rem);
+        }
+        
+        * h2 {
+            font-size: clamp(1.2rem, 0.4rem + 4.5vw, 2.5rem);
+        }
+        
+        *h3 {
+            font-size: clamp(0.8rem, 0.4rem + 4.5vw, 2.0rem);
+        }
+        
+        *p {
+            font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem)
+        }
+        
+        html {
+            font-size: 16px;
+            font-family: "Roboto";
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .contentcontainerheader {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            min-height: 1rem;
+        }
+        
+        .contentheader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            min-height: 4rem;
+            font-weight: bold;
+        }
+        
+        .contentheader nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .contentheader nav ul {
+            padding: 1rem;
+            margin: 0rem;
+        }
+        /*here End´s the Desktop Header Section */
+        
+        .contentcontainerlearn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: grey;
+            min-height: 1rem;
+            max-width: 100%;
+        }
+        
+        .contentlearn {
+            display: flex;
+            background-color: grey;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
+            padding-left: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
+            padding-right: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
+            padding-bottom: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
+            min-height: 1rem;
+            width: 100%;
+            gap: 1rem;
+        }
+        
+        .contentlearn img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        #starthere {
+            display: flex;
+            min-width: 8rem;
+            max-width: 30rem;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgray;
+        }
+        /* Here Starts it doesn´t hurt to keep practicing */
+        
+        .contentcontainerpracticing {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            padding-top: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
+            padding-left: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
+            padding-right: clamp(0.0rem, 0.1rem + 2vw, 1.5rem);
+            padding-bottom: clamp(0.0rem, 0.1rem + 2vw, 1.75rem);
+        }
+        
+        .contentpracticingmen {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            min-height: 1rem;
+        }
+        
+        .contentpracticingmen h3 {
+            font-size: clamp(0.8rem, 0.4rem + 2.5vw, 2.0rem)
+        }
+        
+        .contentpracticingmen p {
+            font-size: clamp(0.5rem, 0.4rem + 2.5vw, 1.5rem)
+        }
+        
+        .contentpracticingmen img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .contentpracticingdate {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            min-height: 1rem;
+            height: auto;
+        }
+        
+        .contentpracticingdatebox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .contentpracticingdateboximg {
+            width: 30%;
+        }
+        
+        @media only screen and (max-width: 650px) {
+            .contentpracticingdateboximg {}
+            .contentcontainerpracticing {
+                flex-wrap: wrap;
+            }
+            #bluetext {
+                display: none;
+            }
+        }
+        
+        .contentpracticingdateboximg img {
+            height: auto;
+            width: 100%;
+            padding: 1rem;
+        }
+        
+        .contentpracticingdateboxtext {
+            display: flex;
+            width: 70%;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: flex-start;
+        }
+        
+        .contentpracticingdateboxtext h3 {
+            font-size: clamp(0.8rem, 0.4rem + 2.5vw, 2.0rem)
+        }
+        
+        .contentpracticingdateboxtext p {
+            font-size: clamp(0.3rem, 0.4rem + 2.5vw, 1.5rem)
+        }
+        
+        #bluetext {
+            color: aqua;
+            font-size: clamp(0.3rem, 0.4rem + 2.5vw, 1.0rem)
+        }
+        
+        @media only screen and (max-width: 600px) {}
+        
+        .contentpracticingdateboxgrey {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: lightgrey;
+        }
+        
+        .contentpracticingdateboxgrey img {}
+        
+        .contentpracticingdatebox img {}
+        /* Here Ends it doesn´t hurt to keep practicing */
+        /* Here Starts "Start learning" */
+        
+        #aaa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: lightgrey;
+        }
+        
+        .grid-container {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, auto);
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .grid-item {
+            align-self: center;
+            justify-self: center;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px 30px 30px 30px;
+        }
+        
+        .grid-itemone {
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .grid-item h3 {
+            text-align: center;
+        }
+        
+        .grid-item p {
+            text-align: center;
+        }
+        
+        .grid-item-1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 0.1rem;
+            }
+            .grid-item-1 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+        /*
+        #sectionthree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        */
+        
+        .contentcontainergrid {
+            display: grid;
+            min-height: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.3fr 1fr 1fr auto;
+            grid-template-areas: "one one one one" "two two three four" "two two five six";
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .one {
+            grid-area: one;
+        }
+        
+        .one h2 {
+            text-align: center;
+        }
+        
+        .two {
+            grid-area: two;
+        }
+        
+        .two h3 {
+            text-align: center;
+        }
+        
+        .two p {
+            text-align: center;
+        }
+        
+        .three {
+            grid-area: three;
+            padding: 3rem;
+        }
+        
+        .four {
+            grid-area: four;
+            align-self: center;
+            justify-self: start;
+        }
+        
+        .five {
+            grid-area: five;
+            padding: 3rem;
+        }
+        
+        .six {
+            grid-area: six;
+            align-self: center;
+            justify-self: start;
+        }
+        
+        .contentcontainergrid video {
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+        }
+        
+        .contentcontainergrid img {
+            width: 100%;
+            padding: 1rem;
+            border: 1rem solid white;
+            border-radius: 1rem;
+            height: auto;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .contentcontainergrid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 0.1rem;
+                grid-template-areas: "one" "two" "three" "four" "five" "six";
+            }
+            .three {
+                grid-area: three;
+                padding: 0;
+            }
+            .four {
+                grid-area: four;
+                align-self: center;
+                justify-self: center;
+            }
+            .five {
+                grid-area: five;
+                padding: 0;
+            }
+            .six {
+                grid-area: six;
+                align-self: center;
+                justify-self: center;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        .footerlinks {
+            display: grid;
+        }
+        
+        .footerlinks nav {
+            display: grid;
+            grid-template-columns: repeat(3, 0.3fr);
+            justify-content: center;
+        }
+        
+        .footerlinks nav ul {
+            font-size: clamp(1rem, 0.4rem + 4.5vw, 1.0rem);
+            padding: 0.5rem;
+        }
+        
+        .footerlinks a {
+            text-decoration: none;
+            color: black;
+            transition-property: color;
+            transition-duration: 2s;
+        }

@@ -25,7 +25,7 @@ html {
 
 body {
     display: block;
-    background-color: rgb(30, 144, 255);
+    background-color: lightgrey;
 }
 
 .header {
@@ -34,7 +34,7 @@ body {
     max-width: 100%;
     min-height: 2rem;
     flex-wrap: wrap;
-    background-color: rgb(30, 144, 255);
+    background-color: lightgrey;
     z-index: 1;
 }
 
@@ -173,7 +173,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 1rem;
-    background-color: rgb(30, 144, 255);
+    background-color: lightgrey;
     transition: background-color 2s ease-in 600ms;
 }
 
@@ -194,12 +194,12 @@ body {
     flex-direction: column;
     margin-top: clamp(1rem, 0.1rem + 4.5vw, 3rem);
     gap: 1rem;
-    background-color: rgb(30, 144, 255);
+    background-color: lightgray;
     transition: background-color 2s ease-in 600ms;
 }
 
 .uebermichtext:hover {
-    background-color: rgb(50, 164, 255);
+    background-color: lightgrey;
 }
 
 .uebermichtext h2 {
@@ -214,10 +214,14 @@ body {
     hyphens: auto;
 }
 
+
+/* Ende Projekte*/
+
 .containerprojekte {
     display: flex;
+    align-items: center;
     justify-content: center;
-    min-height: 1rem;
+    flex-direction: column;
 }
 
 .projektetext {
@@ -230,13 +234,89 @@ body {
     flex-direction: column;
     margin-top: clamp(1rem, 0.1rem + 4.5vw, 3rem);
     gap: 1rem;
-    background-color: rgb(30, 144, 255);
+    background-color: lightgrey;
     transition: background-color 2s ease-in 600ms;
 }
 
 .projektetext h2 {
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+.projektegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 1000px) {
+    .projektegrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projektegrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+
+/* Projektcard CSS Content*/
+
+.projektkartewrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.containerprojektcard {
+    box-shadow: 0px 2px 8px 0px lightcyan;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    /*background-image: url(/Resources/images/pexels-nicole-avagliano-2706654.jpg);*/
+    background-color: lightslategray;
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profil-img {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.nameofproject {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin: 1rem 2rem;
+}
+
+.button {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: lightslategray;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .footerlinks {

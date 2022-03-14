@@ -214,6 +214,31 @@ body {
     hyphens: auto;
 }
 
+.containerprojekte {
+    display: flex;
+    justify-content: center;
+    min-height: 1rem;
+}
+
+.projektetext {
+    display: flex;
+    max-width: 75%;
+    min-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: clamp(1rem, 0.1rem + 4.5vw, 3rem);
+    gap: 1rem;
+    background-color: rgb(30, 144, 255);
+    transition: background-color 2s ease-in 600ms;
+}
+
+.projektetext h2 {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
 .footerlinks {
     display: flex;
     justify-content: center;

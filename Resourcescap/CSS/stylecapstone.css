@@ -148,6 +148,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            overflow: hidden;
             width: 100%;
         }
         
@@ -169,6 +170,7 @@
             height: auto;
             width: 100%;
             padding: 1rem;
+            border-radius: 20px;
         }
         
         .contentpracticingdateboxtext {
@@ -232,6 +234,7 @@
             background-color: white;
             border: 1px solid white;
             border-radius: 30px 30px 30px 30px;
+            overflow: hidden;
         }
         
         .grid-itemone {

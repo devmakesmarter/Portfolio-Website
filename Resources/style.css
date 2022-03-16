@@ -311,7 +311,23 @@ body {
     margin: 1rem 2rem;
 }
 
-.button {
+.buttonone {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: lightslategray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.buttonone a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttontwo {
     width: 100%;
     border: none;
     font-size: 1rem;

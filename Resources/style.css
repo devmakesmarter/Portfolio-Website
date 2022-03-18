@@ -307,8 +307,14 @@ body {
     margin-bottom: 1rem;
 }
 
+.descriptionreadmore {
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+
 .description {
     margin: 1rem 2rem;
+    display: none;
 }
 
 .buttonone {
@@ -325,6 +331,8 @@ body {
 .buttonone a {
     text-decoration: none;
     color: white;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .buttontwo {
@@ -336,6 +344,7 @@ body {
     background-color: lightslategray;
     padding: 1rem;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .footerlinks {

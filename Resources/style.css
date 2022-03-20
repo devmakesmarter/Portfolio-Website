@@ -20,7 +20,7 @@
 
 html {
     font-size: 16px;
-    font-family: Helvetica, Arial, Helvetica, sans-serif
+    font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif
 }
 
 body {
@@ -83,11 +83,32 @@ body {
 
 .head {
     display: flex;
-    min-height: 300px;
+    min-height: 200px;
+    /*
     background-image: url(/Resources/images/Medium\ pexels-abdul-kayum-10845119.jpg);
+    */
+    background-color: lightslategray;
     background-position: center;
     background-size: cover;
     border-radius: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.time p {
+    font-size: clamp(1rem, 0.4rem + 4.5vw, 2rem);
+    margin: 0.5rem;
+    color: black;
+    font-weight: bold;
 }
 
 .name {
@@ -96,6 +117,7 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
+    flex-direction: column;
     /*font-size: 2.5rem;
     /*font-size: clamp(1rem, 0.5rem + 10vw, 5rem);*/
     font-weight: bold;
@@ -112,7 +134,13 @@ body {
     ;
 }
 
-.name h1 {}
+.name h1 {
+    margin: 1rem;
+}
+
+.name h3 {
+    font-size: clamp(0.8rem, 0.4rem + 4.5vw, 2.0rem);
+}
 
 .interessen {
     margin-top: 6rem;
@@ -140,13 +168,14 @@ body {
     display: inline-flex;
     border: 0.1rem solid;
     border-radius: 8px;
-    box-shadow: 0px 8px 8px 0px lightcyan;
+    box-shadow: 0px 8px 8px 0px lightslategray;
     width: 15rem;
     min-height: 8rem;
     font-family: 'Press Start 2P';
     align-items: center;
     justify-content: center;
     align-content: center;
+    margin-bottom: 2rem;
 }
 
 .cotainercontent p {
@@ -176,7 +205,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 1rem;
-    background-color: lightgrey;
+    background-color: white;
     transition: background-color 2s ease-in 600ms;
 }
 
@@ -197,12 +226,13 @@ body {
     flex-direction: column;
     margin-top: clamp(1rem, 0.1rem + 4.5vw, 3rem);
     gap: 1rem;
-    background-color: lightgray;
+    background-color: white;
     transition: background-color 2s ease-in 600ms;
+    margin-bottom: 2rem;
 }
 
 .uebermichtext:hover {
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .uebermichtext h2 {
@@ -276,7 +306,7 @@ body {
 }
 
 .containerprojektcard {
-    box-shadow: 0px 16px 16px 2px lightcyan;
+    box-shadow: 0px 16px 16px 2px white;
     text-align: center;
     border-radius: 1rem;
     position: relative;
@@ -331,8 +361,8 @@ body {
 .buttonone a {
     text-decoration: none;
     color: white;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .buttontwo {

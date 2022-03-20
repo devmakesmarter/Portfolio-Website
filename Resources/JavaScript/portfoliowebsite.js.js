@@ -1,3 +1,27 @@
+/* Clock at the Head Div*/
+
+
+
+const time = () => {
+    var time = new Date();
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+}
+
+setInterval(time, 10);
+
+/* Clock at the Head Div*/
+
+
+
+
+
 let buttonchanger = document.getElementById("button");
 
 function buttonchange() {
@@ -23,6 +47,8 @@ function buttonchangeone() {
 buttonchangerone.onclick = buttonchangeone;
 
 
+
+
 let buttonchangertwo = document.getElementById("buttontwo");
 
 function buttonchangetwo() {
@@ -45,9 +71,9 @@ let number = Math.floor(Math.random() * 5);
 let readmore = document.getElementById("readmoreprojekt1");
 let description = document.getElementById("descriptionprojekt1");
 
+let readmoreprojekt2 = document.getElementById("readmoreprojekt2");
+let description2 = document.getElementById("descriptionprojekt2");
 
-
-console.log(description);
 
 
 const show = () => {
@@ -62,8 +88,32 @@ const show = () => {
     }
 }
 
+const show2 = () => {
+    if (description2.style.display != "block") {
+
+        return description2.style.display = "block";
+
+
+    } else if ((description2.style.display === "block")) {
+
+        return description2.style.display = "none"
+    }
+}
+
 readmore.addEventListener("click", show);
+readmoreprojekt2.addEventListener("click", show2);
+
+
+
+
+
+
 
 
 
 /* End This is for the readmore Event */
+
+
+
+
+/*Brechnung*/

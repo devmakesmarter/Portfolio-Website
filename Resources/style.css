@@ -68,8 +68,7 @@ body {
 }
 
 .headercontent nav ul:hover {
-    font-size: 2rem;
-    background-color: darkgreen;
+    font-size: clamp(1rem, 0.4rem + 4.5vw, 1.8rem);
 }
 
 .headercontent a {
@@ -126,6 +125,7 @@ body {
     text-align: center;
     border: 0rem solid black;
     transition-property: border;
+    background-color: white;
 }
 
 .name:hover {
@@ -140,6 +140,7 @@ body {
 
 .name h3 {
     font-size: clamp(0.8rem, 0.4rem + 4.5vw, 2.0rem);
+    margin-bottom: 1rem;
 }
 
 .interessen {
@@ -176,6 +177,8 @@ body {
     justify-content: center;
     align-content: center;
     margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .cotainercontent p {
@@ -374,7 +377,13 @@ body {
     background-color: lightslategray;
     padding: 1rem;
     border-radius: 0.5rem;
-    cursor: pointer;
+}
+
+.buttontwo a {
+    text-decoration: none;
+    color: white;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .footerlinks {

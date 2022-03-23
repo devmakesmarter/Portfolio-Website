@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+* h1 {
+    font-size: clamp(1.5rem, 0.4rem + 4.5vw, 3rem);
+}
+
+* h2 {
+    font-size: clamp(1.0rem, 0.4rem + 4.5vw, 2.5rem);
+}
+
+*h3 {
+    font-size: clamp(0.8rem, 0.4rem + 4.5vw, 2.0rem);
+}
+
+*p {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem)
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: block;
+    background-color: lightgray;
+}
+
+
+/* Here Beginns the Colorgenerator */
+
+.projektcontainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projektcontainer p {
+    text-align: center;
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.5rem);
+}
+
+.llll {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrappercolorgenerator {
+    border: 0.5rem solid white;
+    padding: 2rem;
+    font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+    border: 12px ridge;
+    min-height: 20rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: "headtextcolorgenerator headtextcolorgenerator headtextcolorgenerator" "containerbackgroundcolorone containerbackgroundcolortwo containerbackgroundcolorthree" "containerbackgroundcolorfour containerbackgroundcolorfive containerbackgroundcolorsix" ". footertextcolorgenerator .";
+}
+
+@media only screen and (max-width: 600px) {
+    .wrappercolorgenerator {
+        padding: 0.1rem;
+    }
+}
+
+.wrappercolorgenerator p {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+}
+
+.headtextcolorgenerator {
+    grid-area: headtextcolorgenerator;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.7rem;
+    border: 3px ridge;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.headtextcolorgenerator h2 {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+    font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.containerbackgroundcolorone {
+    grid-area: containerbackgroundcolorone;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    border: 3px ridge;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+    font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+}
+
+.containerbackgroundcolortwo {
+    grid-area: containerbackgroundcolortwo;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    border: 3px ridge;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#two {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+}
+
+.containerbackgroundcolorthree {
+    grid-area: containerbackgroundcolorthree;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    border: 3px ridge;
+    ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#three {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+}
+
+.containerbackgroundcolorfour {
+    grid-area: containerbackgroundcolorfour;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    border: 3px ridge;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#four {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+}
+
+.containerbackgroundcolorfive {
+    grid-area: containerbackgroundcolorfive;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    border: 3px ridge;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#five {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+}
+
+.containerbackgroundcolorsix {
+    grid-area: containerbackgroundcolorsix;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    border: 3px ridge;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#six {
+    font-size: clamp(0.6rem, 0.4rem + 4.5vw, 1.8rem);
+}
+
+.footertextcolorgenerator {
+    grid-area: footertextcolorgenerator;
+    cursor: pointer;
+    background-color: white;
+}
+
+.footertextcolorgenerator button {
+    font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    #one {
+        font-size: 0.7rem;
+        font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    }
+    #two {
+        font-size: 0.7rem;
+        font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    }
+    #three {
+        font-size: 0.7rem;
+        font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    }
+    #four {
+        font-size: 0.7rem;
+        font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    }
+    #five {
+        font-size: 0.7rem;
+        font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    }
+    #six {
+        font-size: 0.7rem;
+        font-family: 'Quicksand', Helvetica, Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/* Here Ends the Containerbackgroundcoloreditor*/
+
+.footerlinks {
+    display: block;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    min-height: 1rem;
+}
+
+.footerlinks nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.footerlinks nav ul {
+    display: inline;
+    font-size: clamp(1rem, 0.4rem + 4.5vw, 1.0rem);
+    padding: 0.5rem;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    color: black;
+    transition-property: color;
+    transition-duration: 2s;
+}

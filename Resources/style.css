@@ -245,7 +245,7 @@ body {
 
 .uebermichtext p {
     padding: 0.7rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
     font-size: clamp(0.8rem, 0.4rem + 2.0vw, 1.8rem);
     hyphens: auto;
 }

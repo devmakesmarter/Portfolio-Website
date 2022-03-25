@@ -80,6 +80,12 @@ let description = document.getElementById("descriptionprojekt1");
 let readmoreprojekt2 = document.getElementById("readmoreprojekt2");
 let description2 = document.getElementById("descriptionprojekt2");
 
+let readmoreprojekt3 = document.getElementById("readmoreprojekt3");
+let description3 = document.getElementById("descriptionprojekt3");
+
+let readmoreprojekt4 = document.getElementById("readmoreprojekt4");
+let description4 = document.getElementById("descriptionprojekt4");
+
 
 
 const show = () => {
@@ -106,9 +112,38 @@ const show2 = () => {
     }
 }
 
+const show3 = () => {
+    if (description3.style.display != "block") {
+
+        return description3.style.display = "block";
+
+
+    } else if ((description3.style.display === "block")) {
+
+        return description3.style.display = "none"
+    }
+}
+
+
+const show4 = () => {
+    if (description4.style.display != "block") {
+
+        return description4.style.display = "block";
+
+
+    } else if ((description4.style.display === "block")) {
+
+        return description4.style.display = "none"
+    }
+}
+
+
+
+
 readmore.addEventListener("click", show);
 readmoreprojekt2.addEventListener("click", show2);
-
+readmoreprojekt3.addEventListener("click", show3);
+readmoreprojekt4.addEventListener("click", show4);
 
 
 

@@ -101,9 +101,6 @@ function lifeduration() {
     var age = document.getElementById("age").value;
 
     age = parseInt(age);
-
-
-
     age = agebonus(age);
     age = married(age);
     age = liferisk(age);
@@ -145,7 +142,7 @@ function lifeduration() {
 
     */
 
-
+    age = Math.floor(age);
     var lifeduration = document.getElementById("lifeduration");
     lifeduration.innerHTML = `Ihre vorraussichtliches Lebensendalter ${age} Jahre`;
     lifeduration.style.color = "darkgreen";

@@ -207,7 +207,6 @@
                         .footertextcolorgenerator {
                             grid-area: footertextcolorgenerator;
                             cursor: pointer;
-                            background-color: white;
                         }
                         
                         .footertextcolorgenerator button {
@@ -263,7 +262,7 @@
                             align-content: center;
                         }
                         
-                        .containerlife input[type=number] {
+                        .containerlife input[type=text] {
                             width: 100%;
                             text-align: center;
                             font-size: 1.5rem;
@@ -286,11 +285,6 @@
                             justify-content: center;
                             align-items: center;
                             flex-wrap: wrap;
-                        }
-                        
-                        #marriedooo {
-                            padding: 5rem;
-                            font-size: 5rem;
                         }
                         
                         .childformmarried p {
@@ -318,7 +312,6 @@
                             justify-content: center;
                             align-items: center;
                             cursor: pointer;
-                            background-color: white;
                         }
                         
                         .projekt2buttonscontainer p {

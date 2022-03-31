@@ -104,44 +104,6 @@ function lifeduration() {
     age = agebonus(age);
     age = married(age);
     age = liferisk(age);
-
-
-    /*
-        var checkbox = document.getElementsByName("hartfacts");
-        var checkboxvalue = [];
-
-        console.log(checkboxvalue.length);
-        console.log(typeof(checkboxvalue.length));
-
-        for (var i = 0; i < checkbox.length; i++) {
-
-            if (checkbox[i].checked == true) {
-
-                checkboxvalue.push(checkbox[i].value);
-            }
-        }
-
-        if (checkboxvalue.length == 1) {
-
-            age = age * 0.96;
-
-        } else if (checkboxvalue.length == 2) {
-
-            age = age * 0.94;
-
-        } else if (checkboxvalue.length == 3) {
-
-            age = age * 0.92;
-        } else if (checkboxvalue == []) {
-
-            age = age * 1;
-
-        }
-
-
-
-    */
-
     age = Math.floor(age);
     var lifeduration = document.getElementById("lifeduration");
     lifeduration.innerHTML = `Ihre vorraussichtliches Lebensendalter ${age} Jahre`;

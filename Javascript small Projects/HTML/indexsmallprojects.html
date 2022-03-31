@@ -10,6 +10,7 @@
     <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="4hJeN1yeE"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="resetsheet" href="/Javascript small Projects/CSS/resetsheet.css">
     <link rel="stylesheet" href="/Javascript small Projects/CSS/stylejavacriptsmallprojects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +40,7 @@
 
         <div class="wrappercolorgenerator">
             <div id="headtextcolorgenerator" class="headtextcolorgenerator">
-                <h2>Unser Farbauswahlgenerator hilft Ihnen bei der Auswahl Ihrer Wunschfarbe.<br> Klicken sie einfach untern auf den Button und Sie erhalten verschiedene Farbvorschläge<br> inklusive RGB-Code</h2>
+                <h2>Unser Farbauswahlgenerator hilft Ihnen bei der Auswahl Ihrer Wunschfarbe.<br> Klicken Sie einfach unten auf den Button und Sie erhalten verschiedene Farbvorschläge<br> inklusive RGB-Code</h2>
             </div>
             <div id="one" class="containerbackgroundcolorone">
                 <p>RGB-Code</p>
@@ -68,9 +69,67 @@
     <section>
         <div id="projekt" class="projektcontainer">
             <h1>Projekt 2 </h1>
-            <p> .... </p>
+            <p> Hierbei handelt es sich um einen Lebensendalterrechner. Er berücksichtigt mehrere Faktoren und rechnet Ihnen ein individuelles Lebensendalter </p>
+        </div>
+    </section>
+
+    <section class="llll">
+        <div class="containerlife">
+            <form>
+                <label for="age"><h2>Bitte geben Sie Ihr Alter ein</h2></label>
+                <input type="number" id="age" name="age">
+            </form>
+            <form>
+                <div class="formmarried">
+                    <label for="married"><h2>Sind Sie verheiratet?</h2></label>
+                    <div class="childformmarried">
+                        <input type="radio" id="marriedooo" name="married" value="yes" checked>
+                        <p>Ja</p>
+                        <input type="radio" id="marriedno" name="married" value="no">
+                        <p>Nein</p>
+                    </div>
+                </div>
+            </form>
+
+            <form>
+                <div class="formmarried">
+                    <label><h2>Welche Aussagen treffen auf Sie zu?</h2></label>
+                    <div class="childformmarried">
+                        <div class="childchildformmarried">
+                            <input type="checkbox" id="checkboxone" name="hartfacts" value="1">
+                            <p>Raucher</p>
+                        </div>
+                        <div class="childchildformmarried">
+                            <input type="checkbox" id="checkboxtwo" name="hartfacts" value="2">
+                            <p>Übergewicht </p>
+                        </div>
+                        <div class="childchildformmarried">
+                            <input type="checkbox" id="checkboxthree" name="hartfacts" value="3">
+                            <p>Ungesunde Ernährung</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="formmarried">
+                <h2 id="lifeduration">Ihre Lebenserwartung</h2>
+            </div>
+            <form>
+                <br>
+                <div class="projekt2buttonscontainer">
+                    <button type="button" id="btnberechnen" class="projekt2buttonscontainer"><p>Berechnen</p></button>
+                    <button class="projekt2buttonscontainer"><p>Reset</p></button>
+                </div>
+
+
+            </form>
+
 
         </div>
+
+
+
     </section>
 
 

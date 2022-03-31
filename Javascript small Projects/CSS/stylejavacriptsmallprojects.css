@@ -253,7 +253,77 @@
                             }
                         }
                         /* Here Ends the Containerbackgroundcoloreditor*/
-                        /*The Pianoproject CSS is in testareastyle*/
+                        /* Here Begins the Styling from Projekt 2 */
+                        
+                        .containerlife {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: center;
+                        }
+                        
+                        .containerlife input[type=number] {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 1.5rem;
+                        }
+                        
+                        .formmarried {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: center;
+                        }
+                        
+                        .formmarried h2 {
+                            text-align: center;
+                        }
+                        
+                        .childformmarried {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-wrap: wrap;
+                        }
+                        
+                        #marriedooo {
+                            padding: 5rem;
+                            font-size: 5rem;
+                        }
+                        
+                        .childformmarried p {
+                            margin: 0;
+                            font-size: clamp(0.9rem, 0.4rem + 4.5vw, 1.8rem);
+                        }
+                        
+                        .childchildformmarried {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .childchildformmarried p {
+                            margin: 0;
+                            font-size: clamp(0.7rem, 0.4rem + 4.5vw, 1.8rem);
+                        }
+                        
+                        #lifeduration h3 {
+                            text-align: center;
+                        }
+                        
+                        .projekt2buttonscontainer {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            background-color: white;
+                        }
+                        
+                        .projekt2buttonscontainer p {
+                            font-size: 2rem;
+                        }
                         
                         .footerlinks {
                             display: block;
